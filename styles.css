@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Segoe UI', sans-serif;
+    background: transparent;
+    user-select: none;
+    -webkit-app-region: drag;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#clock-container {
+    width: 280px;
+    height: 280px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* Frames */
+.default-frame {
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.square-frame {
+    border-radius: 20px;
+    background: rgba(20, 20, 20, 0.8);
+    border: 1px solid #333;
+}
+
+.glass-frame {
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles */
+.default-style {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.minimal-style {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #eee;
+    letter-spacing: 2px;
+}
+
+.retro-style {
+    font-family: 'Courier New', monospace;
+    font-size: 2.8rem;
+    color: #0f0;
+    text-shadow: 0 0 5px #0f0;
+}
+
+/* Controls */
+#controls {
+    position: absolute;
+    bottom: 20px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    -webkit-app-region: no-drag;
+}
+
+#clock-container:hover #controls {
+    opacity: 1;
+}
+
+#settings-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+
+    body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        font-family: 'Segoe UI', sans-serif;
+        background: transparent;
+        user-select: none;
+        -webkit-app-region: drag;
+    }
+
+    .hidden {
+        display: none !important;
+    }
+
+    #clock-container {
+        width: 280px;
+        height: 280px;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        transition: all 0.3s ease;
+    }
+
+    /* Frames */
+    .default-frame {
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.6);
+        border: 2px solid rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+    }
+
+    .square-frame {
+        border-radius: 20px;
+        background: rgba(20, 20, 20, 0.8);
+        border: 1px solid #333;
+    }
+
+    .glass-frame {
+        border-radius: 30px;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(15px);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Styles */
+    .default-style {
+        font-size: 3rem;
+        font-weight: bold;
+        color: white;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .minimal-style {
+        font-size: 2.5rem;
+        font-weight: 300;
+        color: #eee;
+        letter-spacing: 2px;
+    }
+
+    .retro-style {
+        font-family: 'Courier New', monospace;
+        font-size: 2.8rem;
+        color: #0f0;
+        text-shadow: 0 0 5px #0f0;
+    }
+
+    /* Controls */
+    #controls {
+        position: absolute;
+        bottom: 20px;
+        opacity: 0;
+        transition: opacity 0.3s;
+        -webkit-app-region: no-drag;
+    }
+
+    #clock-container:hover #controls {
+        opacity: 1;
+    }
+
+    #settings-btn {
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    #settings-btn:hover {
+        color: white;
+    }
+
+    /* Settings Panel Styles Removed */

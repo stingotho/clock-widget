@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock Settings</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #222;
+            color: white;
+            padding: 20px;
+            user-select: none;
+        }
+
+        h3 {
+            margin-top: 0;
+        }
+
+        .setting-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        select,
+        input[type="color"] {
+            width: 100%;
+            padding: 5px;
+            background: #333;
+            color: white;
+            border: 1px solid #555;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 8px 15px;
+            margin-top: 10px;
+            background: #444;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background: #555;
+        }
+
+        #close-btn {
+            background: #a33;
+            margin-top: 20px;
+        }
+
+        #close-btn:hover {
+            background: #c44;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Settings</h3>
+    <div class="setting-group">
+        <label>Frame:</label>
+        <select id="frame-select">
+            <option value="default-frame">Default (Round)</option>
+            <option value="square-frame">Square</option>
+            <option value="glass-frame">Glass</option>
+        </select>
+    </div>
+    <div class="setting-group">
+        <label>Style:</label>
+        <select id="style-select">
+            <option value="default-style">Digital</option>
+            <option value="minimal-style">Minimal</option>
+            <option value="retro-style">Retro</option>
+        </select>
+    </div>
+    <div class="setting-group">
+        <label>Text Color:</label>
+        <input type="color" id="text-color-picker" value="#ffffff">
+    </div>
+    <div class="setting-group">
+        <label>Background Color:</label>
+        <input type="color" id="bg-color-picker" value="#000000">
+    </div>
+    <div class="setting-group">
+        <label>
+            <input type="checkbox" id="always-on-top" checked> Always on Top
+        </label>
+    </div>
+    <button id="close-btn">Close Settings</button>
+
+    <script src="settings.js"></script>
+</body>
+
+</html>
